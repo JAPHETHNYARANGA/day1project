@@ -42,16 +42,60 @@ li:hover{
         text-align: center;
         
     }
+    .icon .fas{
+        color: #111;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      
+      .sidenav {
+        height: 100%;
+        width: 0;
+        background-color: #111;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.6s;
+      
+      }
+      .sidenav a {
+        padding: 9px 9px 9px 33px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #f1f1f1;
+        display: block;
+        transition: 0.4s;
+        border-bottom: 1px solid #f1f1f1;
+      
+      }
+      
+      
+      .sidenav a:hover{
+        background:#2DBACB ;
+      }
+      
+      .sidenav .fa-times{
+        color: #ffffff;
+        font-size: 20px;
+      
+      }
 }
 
 
 
-}
+
 /*ipads, tablets styles*/
 @media only screen and (max-width: 768px) and (min-width: 480px) {
     body{
         background-color:orange;
         background-image: url('./images/day1bg.jpg');
+        
        
     }
     .nav-items{
@@ -66,7 +110,49 @@ li:hover{
         text-align: center;
         
     }
-
+    .icon .fas{
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      
+      .sidenav {
+        height: 100%;
+        width: 0;
+        background-color: #111;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.6s;
+      
+      }
+      .sidenav a {
+        padding: 9px 9px 9px 33px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #f1f1f1;
+        display: block;
+        transition: 0.4s;
+        border-bottom: 1px solid #f1f1f1;
+      
+      }
+      
+      
+      .sidenav a:hover{
+        background:#2DBACB ;
+      }
+      
+      .sidenav .fa-times{
+        color: #ffffff;
+        font-size: 20px;
+      
+      }
 }
 /*laptop styles*/
 @media only screen and (max-width: 1025px) and (min-width: 769px){
@@ -90,7 +176,28 @@ li:hover{
         font-size: 40px;
     }
     
+    .close .fas{
+        color:white;
+        position: absolute;
+        top:10px;
+        right:10px;
+        font-size: 30px;
+        cursor:pointer;
+    }
+    .sidenav{
+        display:inline;
 
+    }
+   .nav{
+       text-align: center;
+   }
+    a{
+        text-decoration: none;
+        color:white;
+        font-size: 25px;
+        padding-right: 50px;
+        
+    }
 }
 
 
@@ -117,5 +224,21 @@ li:hover{
     .button{
         text-align: center;
         font-size: 40px;
+    }
+    .close{
+        display:none;
+    }
+    .fluid-container{
+        text-align: center;
+    }
+    .nav{
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+        font-size: 25px;
+        padding-right: 50px;
+        
     }
 }
