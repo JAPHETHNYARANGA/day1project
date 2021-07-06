@@ -6,21 +6,35 @@ body, html{
  body{
     color:white;
 } 
+.center{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    
+}
+li{
+    display: inline;
+    padding:50px;
+    
+}
+li:hover{
+    color:green;
+}
 /*phone styles*/
 @media only screen and (max-width: 480px) and (min-width: 320px)
 {
     body{
-        background-color:orange;
-        background-image: url('/images/day1bg.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color:red;
+        background-image: url('./images/day1bg.jpg');
+       
     }
     .nav-items{
         display:none;
     }
     .mid{
         text-align: center;
-        margin:40px 0 0 0;
         font-weight:700;
         font-size: large;
     }
@@ -37,16 +51,14 @@ body, html{
 @media only screen and (max-width: 768px) and (min-width: 480px) {
     body{
         background-color:orange;
-        background-image: url('/images/day1bg.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url('./images/day1bg.jpg');
+       
     }
     .nav-items{
         display:none;
     }
     .mid{
         text-align: center;
-        margin:40px 0 0 0;
         font-weight:700;
         font-size: large;
     }
@@ -60,12 +72,50 @@ body, html{
 @media only screen and (max-width: 1025px) and (min-width: 769px){
     body{
         background-color:blue;
+        background-image: url('./images/day1bg.jpg');
+       
+        
+        
     }
+    .icon{
+        display:none;
+    }
+    .mid{
+        text-align: center;
+        font-size: 700;
+        font-size: 5vh;
+    }
+    .button{
+        text-align: center;
+        font-size: 40px;
+    }
+    
+
 }
+
+
 
 /* desktop styles*/
 @media screen and (min-width: 1025px) {
     body{
         background-color:black;
+        background-image: url('./images/day1bg.jpg');
+       
+        
+        
+    }
+    .icon{
+        display:none;
+    }
+    
+    
+    .mid{
+        text-align: center;
+        font-size: 700;
+        font-size: 5vh;
+    }
+    .button{
+        text-align: center;
+        font-size: 40px;
     }
 }
